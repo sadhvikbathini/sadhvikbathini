@@ -1,10 +1,23 @@
 import './index.scss';
 import Headerbar from '../Headerbar'
 import Loader from '../Loader'
-import { useRef } from 'react'
+import React, { useState , useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+
+// Convert only one input value to titlecase and update state
+	const [value, setValue] = useState('');
+	const toTitleCase = (str) => {
+		return str.replace(/\w\S*/g, (txt) => {
+		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+		});
+	};
+	const handleChange = (event) => {
+		const titleCaseValue = toTitleCase(event.target.value);
+		setValue(titleCaseValue);
+	};
+// EMAILJS
 	const refForm = useRef();
 	const sendEmail = (e) => {
 		e.preventDefault()
@@ -22,6 +35,7 @@ const Contact = () => {
 			}
 		)
 	}
+	
 	return (
 		<>
 		<Loader />
@@ -34,18 +48,18 @@ const Contact = () => {
 			<form ref={refForm} onSubmit={sendEmail} >
 			<ul>
 				<li class="half"> 
-					<input type="text" name="name" placeholder="Name"  />
+					<input type="text" name="name" value={value} onChange={handleChange} placeholder="Name" />
 				</li>
 				<li class="half">
 					<input
-						type="email" name="email" placeholder="Email"  />
+						type="email" name="email" placeholder="Email" />
 				</li>
 				<li class="half">
  					<input
- 						type="text" name="subject" placeholder="Subject"  />
+ 						type="text" name="subject" placeholder="Subject" />
  				</li>
  				<li class="half">
- 					<textarea placeholder="Message . . . " name="message" requried ></textarea>
+ 					<textarea placeholder="Message . . . " name="message" required></textarea>
  				</li>
  				<li class="half">
  					<input type="submit" class="btn-color-3" value="SEND" />

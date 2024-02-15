@@ -1,0 +1,8 @@
+.temp {
+  cursor: pointer;
+  height: 3rem;
+  animation: bounceIn 1s;
+}
+.temp:hover {
+  animation: rubberBand 1s;
+}

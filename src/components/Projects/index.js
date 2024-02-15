@@ -17,7 +17,7 @@ const Projects = () => {
 			<img
 			src={github}
 			alt="My Github profile"
-			class="iconn"
+			class="temp"
 			/>
 			</Link></center>
 			</>
