@@ -9,8 +9,8 @@ const Contact = () => {
 	const sendEmail = (e) => {
 		e.preventDefault()
 		   const serviceID = 'default_service';
-		   const templateID = REACT_APP_EMAILJS_TEMPLET_ID ;
-		   const PublicKey = REACT_APP_EMAILJS_PUBLIC_KEY ;
+		   const templateID = process.env.REACT_APP_EMAILJS_TEMPLET_ID ;
+		   const PublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY ;
 		   emailjs.sendForm(serviceID, templateID, refForm.current, PublicKey)
 		.then (
 			() =>{
