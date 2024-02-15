@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sadhvikbathini/static/css/main.de469037.css",
+    "main.js": "/sadhvikbathini/static/js/main.5c024ea9.js",
+    "index.html": "/sadhvikbathini/index.html",
+    "main.de469037.css.map": "/sadhvikbathini/static/css/main.de469037.css.map",
+    "main.5c024ea9.js.map": "/sadhvikbathini/static/js/main.5c024ea9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de469037.css",
+    "static/js/main.5c024ea9.js"
+  ]
+}
