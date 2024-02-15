@@ -1,0 +1,135 @@
+// .logo {
+// z-index:1;
+// position: absolute;
+// top: 50%;
+// right: 50%;
+// transform: translate(50%,-50%);
+// text-transform: uppercase;
+// font-family: verdana;
+// font-size: 40em;
+// font-weight: 700;
+// color: #2f2f2f;
+// text-shadow:1px 1px 1px #5f6827,
+	// 1px 2px 1px #5f6827,
+	// 1px 3px 1px #5f6827,
+	// 1px 4px 1px #5f6827,
+	// 1px 5px 1px #5f6827,
+	// 1px 6px 1px #5f6827,
+	// 1px 7px 1px #5f6827,
+	// 1px 8px 1px #5f6827,
+	// 1px 9px 1px #5f6827,
+	// 1px 10px 1px #5f6827,
+	// 1px 18px 6px rgba(16,16,16,0.4),
+	// 1px 22px 10px rgba(16,16,16,0.2),
+	// 1px 25px 35px rgba(16,16,16,0.2),
+// 1px 30px 60px rgba(16,16,16,0.4);
+// animation: growand 2s linear forwards;
+// }
+
+// @keyframes growand {
+// 0% {
+// opacity: 1;
+// font-size: 40em;
+// }
+// 100% {
+// font-size: 250em;
+// }
+
+//}
+
+.logo {
+  position: absolute;
+  font-size: 40em;
+  color: #2f2f2f;
+	//color: #5f6827;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 18px 6px rgba(16,16,16,0.4);
+  animation: growAndDisappear 1.3s ease-out forwards;
+}
+
+@keyframes growAndDisappear {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    //opacity: 0.5;
+    transform: translate(-50%, -50%) scale(3);
+  }
+  99.9% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(5);
+  }
+  100% {
+    padding: 0px;
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+// .logo {
+// position: absolute;
+// font-size: 40em;
+// //font-family: 'Garmond';
+// //-webkit-text-stroke: 5px #5f6827;
+// color: #2f2f2f;
+// z-index: 1;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -50%);
+// text-shadow:
+// 1px 18px 6px rgba(16,16,16,0.4);
+// animation: growAndDisappear 1.3s linear forwards;
+// }
+// @keyframes growAndDisappear {
+// 0% {
+// opacity: 1;
+// }
+// 6%{
+// 	//color: transparent;
+// 	//transform: translate(-50%, -40%);
+// }
+
+// 99.9% {
+// font-size: 250em;
+// opacity: 0;
+// //color: transparent;
+// }
+// 100%{
+// 	font-size: 0em;
+// 	padding: 0px;
+// }
+// }
+
+
+
+
+@media screen and (max-width: 960px) {
+.logo{
+	font-size: 15em;
+}
+
+@keyframes growAndDisappear {
+0% {
+opacity: 1;
+transform: translate(-50%, -50%) scale(1);
+}
+  50% {
+    //opacity: 0.5;
+    transform: translate(-50%, -50%) scale(3);
+  }
+99% {
+		font-size: 160em;
+		opacity: 0;
+		//color: transparent;
+		transform: translate(-50%, -50%) scale(5);
+	}
+100%{
+	font-size: 0em;
+	padding: 0px;
+	transform: translate(-50%, -50%) scale(0);
+}
+}
+}

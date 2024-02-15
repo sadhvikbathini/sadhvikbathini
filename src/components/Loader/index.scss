@@ -1,0 +1,37 @@
+.loader {
+display:flex;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 5em;
+font-family: 'Courier New', monospace;
+color: #5f6827;
+z-index: 1;
+animation: fadeOut 2s forwards;
+}
+.dot{
+	animation: moving 1s infinite;
+}
+@keyframes moving{
+	50%{
+		transform: translate(0%, -50%);
+	}
+	100%{
+		transform: translate(0%, 0%);
+	}
+}
+.star{
+	animation: movingstar 1s infinite;
+}
+@keyframes movingstar{
+	50%{
+		transform: translate(0%, +50%);
+	}
+	100%{
+		transform: translate(0%, 0%);
+	}
+}
+.slash{
+	animation: flip 1s infinite;
+}

@@ -1,0 +1,134 @@
+.titlecard{
+	color: #727f2f;
+	font-size: 50px;
+	display:inline-block;
+	justify-content:center;
+	position: relative;
+	cursor: pointer;
+	//text-align: center;
+	font-family: 'Garmond';
+	//line-height: 0;
+	letter-spacing: 5px;
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+	//margin-left: 4rem;
+	// text-decoration: underline;
+	// text-underline-offset: 0.7rem;
+	// text-decoration-color: #727f2f;
+	// text-decoration-thickness: 1px;
+	// text-decoration-length: 40px;
+	animation: fadeIn 0.5s 0.5s backwards;
+}
+.titlecard::after {
+  content: '';
+  display: block;
+  height: 1px; 
+  background-color: currentColor; 
+  position: absolute;
+  bottom: -5px; 
+  animation: grow 2.5s 1.5s forwards;
+}
+@keyframes grow {
+	0% {
+	left: 50%;
+	width: 1%;
+	}
+	100%{
+	left: 15%;
+	width: 73%;
+	}
+}
+
+.titlecard:hover{
+	cursor: default;
+}
+.contact-form{
+	display:flex;
+	justify-content:center;
+	margin-right:3rem;
+}
+.half{
+	display:flex;
+	margin-bottom: 10px;
+	list-style:none;
+	justify-content:center;
+	animation: fadeInUp 1s 1s;
+	animation-fill-mode: forwards;
+	width: 100%;
+	opacity:0;
+	padding:0;
+	//overflow:hidden;
+	//clear:none;
+}
+	input[type="text"],
+	input[type="email"] {
+		width: 100%;
+		border: none;
+		background: #404040;
+		height: 50px;
+		font-size: 16px;
+		font-weight: 500;
+		font-family: sans-serif;
+		color: #d4d4d4;
+		padding: 0 20px;
+		//min-width: 400px;
+		box-sizing: border-box;
+		//border-radius: 6px;
+	}
+
+	textarea {
+		width: 100%;
+		border: none;
+		background: #404040;
+		height: 50px;
+		font-size: 16px;
+		font-weight: 500;
+		font-family: sans-serif;
+		color: #d4d4d4;
+		padding: 20px;
+		min-height: 150px;
+		min-width: 350px;
+		box-sizing: border-box;
+		//border-radius: 6px;
+	}
+.btn-color-3{
+		  color: #727f2f;
+		  font-size:15px;
+		  font-weight:400;
+		  font-family: sans-serif;
+		  text-decoration:none;
+		  letter-spacing: 5px;
+		  padding: 8px 18px;
+		  border: 1px solid #727f2f;
+		  animation: fadeIn 1s 1.5s backwards;
+		  background: 0 0;
+		  margin-top: 0.5rem;
+		  min-width: 300px;
+	}
+.btn-color-3:hover {
+	  background: #5f6827;
+	  color: #2b2c2b;
+	  letter-spacing: 8px;
+	}
+
+@media screen and (max-width: 375px) {
+.titlecard{
+	font-size:40px;
+}
+@keyframes grow {
+	0% {
+	left: 50%;
+	width: 1%;
+	}
+	100%{
+	left: 14%;
+	width: 73%;
+	}
+}
+textarea{
+	min-width:280px;
+}
+.btn-color-3{
+	min-width:230px;
+}
+}
