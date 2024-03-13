@@ -29,7 +29,7 @@ alt="My Github profile"
 class="iconn"
 />
 </Link>
-<Link to="https://linkedin.com/sadhvikbathini">
+<Link to="https://linkedin.com/in/sadhvikbathini">
 <img src={linkedin}
 alt="My LinkedIn profile"
 class="iconn" />
