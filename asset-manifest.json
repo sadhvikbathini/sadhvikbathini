@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sadhvikbathini/static/css/main.fafead63.css",
-    "main.js": "/sadhvikbathini/static/js/main.a0e373ac.js",
+    "main.js": "/sadhvikbathini/static/js/main.bd9ded69.js",
     "index.html": "/sadhvikbathini/index.html",
     "main.fafead63.css.map": "/sadhvikbathini/static/css/main.fafead63.css.map",
-    "main.a0e373ac.js.map": "/sadhvikbathini/static/js/main.a0e373ac.js.map"
+    "main.bd9ded69.js.map": "/sadhvikbathini/static/js/main.bd9ded69.js.map"
   },
   "entrypoints": [
     "static/css/main.fafead63.css",
-    "static/js/main.a0e373ac.js"
+    "static/js/main.bd9ded69.js"
   ]
 }
